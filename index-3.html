@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11110f">
+<meta name="description" content="Chaitanya Mehta — Trader, Founder and Investor. Personal portfolio covering trading, investments, business and long-term capital strategy.">
+<title>Chaitanya Mehta — Trader · Founder · Investor</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#11110f;--ivory:#d8d9d5;--paper:#cfd1ce;--burg:#54232f;--burg2:#6d2f3c;--muted:#706d67;--line:rgba(17,17,15,.13);--shadow:0 30px 80px rgba(17,17,15,.13);--ease:cubic-bezier(.16,1,.3,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--burg);color:var(--ivory)}
+.nav{position:fixed;z-index:20;top:18px;left:50%;transform:translateX(-50%);width:min(1180px,calc(100% - 36px));padding:11px 12px 11px 20px;display:flex;align-items:center;justify-content:space-between;background:rgba(233,230,223,.82);backdrop-filter:blur(20px);border:1px solid rgba(17,17,15,.08);border-radius:999px;box-shadow:0 12px 35px rgba(17,17,15,.08)}
+.brand{font-weight:800;letter-spacing:-.04em}.navlinks{display:flex;gap:7px}.navlinks a{font-size:13px;padding:9px 13px;border-radius:999px;color:#59564f;transition:.3s var(--ease)}.navlinks a:hover{background:var(--ink);color:var(--ivory)}.nav-cta{background:var(--ink)!important;color:var(--ivory)!important}
+.container{width:min(1180px,calc(100% - 40px));margin:auto}.hero{min-height:100vh;padding:150px 0 70px;display:grid;grid-template-columns:minmax(0,2fr) minmax(300px,1fr);gap:55px;align-items:end;position:relative;overflow:hidden;background:var(--ivory)}
+.hero:before{content:'';position:absolute;width:620px;height:620px;right:-180px;top:-180px;background:radial-gradient(circle,rgba(84,35,47,.16),transparent 65%);pointer-events:none}.eyebrow{display:flex;align-items:center;gap:10px;font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:700;color:var(--burg);margin-bottom:30px}.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--burg);display:block}.hero h1{font-family:Manrope,sans-serif;font-size:clamp(64px,10vw,138px);line-height:.84;letter-spacing:-.085em;max-width:850px;margin:0;font-weight:800}.hero h1 span{display:block;color:var(--burg);text-shadow:0 8px 35px rgba(84,35,47,.10)}.hero-copy{font-size:19px;line-height:1.55;color:#5f5b54;max-width:390px;margin:0 0 10px}.hero-bottom{grid-column:1/-1;display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:22px;margin-top:20px}.scroll{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}.quote{max-width:560px;text-transform:none;letter-spacing:0;font-size:13px;line-height:1.55;font-style:italic;color:#5b5c58}.hero-meta{display:flex;gap:30px}.meta strong{display:block;font-size:18px}.meta span{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+section{padding:120px 0}.dark{background:var(--ink);color:var(--ivory)}.section-grid{display:grid;grid-template-columns:2fr 1fr;gap:70px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--burg2);font-weight:700;margin-bottom:22px}.dark .kicker{color:#ad6d79}.display{font-family:Manrope,sans-serif;font-size:clamp(45px,6.4vw,82px);line-height:.92;letter-spacing:-.07em;margin:0;max-width:850px}.display em{font-style:normal;color:var(--burg2)}.lead{font-size:19px;line-height:1.65;color:#74716b;max-width:650px}.dark .lead{color:#b4b5b0}
+.soft-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:60px}.card{background:#c9cbc7;border:1px solid var(--line);padding:30px;min-height:235px;position:relative;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}.card,.pill,.button{border-radius:32px 32px 32px 12px}.card:after{content:'';position:absolute;right:-70px;bottom:-100px;width:190px;height:190px;border-radius:50%;background:rgba(113,52,65,.075);transition:.6s var(--ease)}.card:hover{transform:translateY(-7px);box-shadow:0 24px 55px rgba(17,17,15,.12);border-color:rgba(113,52,65,.18)}.card:hover:after{transform:scale(1.5)}.card h3{font-size:24px;letter-spacing:-.04em;margin:35px 0 10px}.card p{color:#74716b;line-height:1.6;margin:0}.number{font-family:Manrope;font-size:12px;font-weight:800;color:var(--burg)}
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:650px}.split > div{padding:110px clamp(30px,7vw,110px)}.split .left{background:var(--ivory)}.split .right{background:var(--burg);color:var(--ivory)}.split h2{font-family:Manrope;font-size:clamp(45px,5.8vw,76px);letter-spacing:-.07em;line-height:.9;margin:0 0 28px}.split p{line-height:1.7;color:#6d6962;max-width:500px}.split .right p{color:#d2c2c5}.tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}.pill{padding:11px 14px;border:1px solid rgba(17,17,15,.14);font-size:12px;background:rgba(255,255,255,.45)}.right .pill{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.08)}
+.invest{background:#c3c5c1}.invest-layout{display:grid;grid-template-columns:1.45fr .75fr;gap:18px;margin-top:55px}.feature{min-height:480px;padding:44px;background:var(--ink);color:var(--ivory);position:relative;overflow:hidden;border-radius:48px 48px 48px 14px}.feature:before{content:'SEVNOCEAN';position:absolute;right:-20px;bottom:-25px;font-family:Manrope;font-size:90px;font-weight:800;letter-spacing:-.08em;color:rgba(255,255,255,.035);white-space:nowrap}.feature .kicker{color:#ad6d79}.feature h3{font-family:Manrope;font-size:clamp(38px,5vw,66px);letter-spacing:-.07em;line-height:.9;margin:20px 0}.feature p{color:#b2b3ae;max-width:620px;line-height:1.65}.facts{display:grid;gap:12px}.fact{padding:30px;background:#c7c9c5;border:1px solid var(--line);border-radius:32px 32px 32px 12px;transition:.45s var(--ease)}.fact:hover{transform:translateX(8px);border-color:rgba(111,38,53,.35)}.fact small{display:block;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-size:10px}.fact strong{display:block;font-family:Manrope;font-size:28px;letter-spacing:-.05em;margin-top:9px}.fact p{font-size:13px;line-height:1.5;color:#74716b;margin:6px 0 0}
+.strategy{padding-bottom:130px}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:65px;position:relative}.flow:before{content:'';position:absolute;left:8%;right:8%;top:31px;border-top:1px dashed rgba(17,17,15,.2)}.flow-item{position:relative;padding-right:20px}.flow-dot{width:64px;height:64px;border-radius:50%;background:var(--paper);border:1px solid rgba(17,17,15,.14);display:grid;place-items:center;font-family:Manrope;font-weight:800;position:relative;z-index:1}.flow-item h4{font-size:20px;margin:22px 0 8px;letter-spacing:-.03em}.flow-item p{font-size:13px;line-height:1.6;color:var(--muted);max-width:190px}
+.future{background:var(--ink);color:var(--ivory)}.future-list{margin-top:55px;border-top:1px solid rgba(243,239,230,.16)}.future-row{display:grid;grid-template-columns:80px 1fr 1fr;gap:25px;padding:27px 0;border-bottom:1px solid rgba(243,239,230,.16);align-items:center;transition:.35s var(--ease)}.future-row:hover{padding-left:12px}.future-row span{font-size:12px;color:#918d85}.future-row h3{font-family:Manrope;font-size:28px;letter-spacing:-.05em;margin:0}.future-row p{font-size:13px;line-height:1.5;color:#a8a39a;margin:0}
+.credentials{background:var(--ivory)}.creds{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:55px}.cred{padding:28px;min-height:170px;border:1px solid var(--line);background:#c9cbc7;border-radius:36px 36px 36px 12px}.cred b{font-size:28px;font-family:Manrope;letter-spacing:-.05em}.cred p{color:var(--muted);font-size:12px;line-height:1.5;margin-top:16px}
+.contact{padding:110px 0;background:var(--burg);color:var(--ivory)}.contact-wrap{display:flex;justify-content:space-between;gap:50px;align-items:end}.contact h2{font-family:Manrope;font-size:clamp(50px,7vw,100px);line-height:.87;letter-spacing:-.08em;margin:0;max-width:780px}.contact h2 span{color:#b87985}.button{display:inline-flex;align-items:center;gap:12px;background:var(--ivory);color:var(--ink);padding:17px 22px;font-weight:700;font-size:13px;white-space:nowrap;transition:.4s var(--ease)}.button:hover{transform:translateY(-4px);box-shadow:0 18px 35px rgba(0,0,0,.18)}.button:after{content:'↗';font-size:17px}
+footer{background:var(--ink);color:#858078;padding:25px 0;font-size:11px}.footer-in{display:flex;justify-content:space-between}.reveal{opacity:0;transform:translateY(35px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.reveal.visible{opacity:1;transform:none}
+@media(max-width:850px){.nav{width:calc(100% - 24px);top:12px}.navlinks a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;padding-top:125px;min-height:auto}.hero h1{font-size:clamp(57px,17vw,105px)}.hero-copy{font-size:17px}.hero-bottom{margin-top:70px;align-items:start}.hero-meta{gap:18px}.section-grid,.invest-layout,.split{grid-template-columns:1fr}.section-grid{gap:35px}.soft-grid,.creds{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr 1fr;gap:35px}.flow:before{display:none}.future-row{grid-template-columns:55px 1fr}.future-row p{grid-column:2}.contact-wrap{display:block}.contact .button{margin-top:35px}.split > div{padding:80px 30px}.feature{min-height:410px}}
+@media(max-width:560px){.container{width:min(100% - 28px,1180px)}section{padding:85px 0}.hero{padding-left:14px;padding-right:14px}.hero-bottom{display:block}.hero-meta{margin-top:25px}.soft-grid,.creds,.flow{grid-template-columns:1fr}.display{font-size:48px}.invest-layout{gap:10px}.feature{padding:30px;border-radius:32px 32px 32px 8px}.feature h3{font-size:48px}.future-row h3{font-size:22px}.footer-in{display:block}.footer-in span{display:block;margin-top:8px}}
+</style>
+
+<style>
+.contact-copy{max-width:620px;margin:18px 0 0;color:rgba(233,230,223,.72);font-size:17px;line-height:1.65}
+.modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:24px}
+.modal.open{display:flex}
+.modal-backdrop{position:absolute;inset:0;background:rgba(10,10,10,.72);backdrop-filter:blur(10px)}
+.modal-card{position:relative;z-index:1;width:min(680px,100%);background:#e1ded7;color:#11110f;padding:42px;border-radius:46px 46px 46px 14px;box-shadow:0 40px 100px rgba(0,0,0,.35);border:1px solid rgba(17,17,15,.12);animation:modalIn .45s cubic-bezier(.16,1,.3,1)}
+@keyframes modalIn{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+.modal-close{position:absolute;right:22px;top:18px;width:42px;height:42px;border:0;background:rgba(17,17,15,.07);border-radius:50%;font-size:28px;line-height:1;cursor:pointer;color:#11110f}
+.modal-card h3{font-size:clamp(34px,5vw,58px);line-height:.98;letter-spacing:-.045em;margin:12px 0 14px;max-width:560px}
+.modal-intro{color:#68655f;line-height:1.6;margin-bottom:26px}
+#pitchForm label{display:block;font-size:13px;font-weight:700;letter-spacing:.02em;margin:18px 0;color:#383632}
+#pitchForm input,#pitchForm textarea{display:block;width:100%;margin-top:8px;border:1px solid rgba(17,17,15,.15);background:#d5d2cb;color:#11110f;border-radius:18px;padding:15px 16px;font:inherit;outline:none;transition:.25s}
+#pitchForm input:focus,#pitchForm textarea:focus{border-color:#642d3a;box-shadow:0 0 0 4px rgba(100,45,58,.08)}
+#pitchForm textarea{resize:vertical;min-height:130px}
+.modal-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.button-dark{background:#11110f!important;color:#e9e6df!important}
+.button-whatsapp{background:#642d3a!important;color:#e9e6df!important}
+.modal-note{font-size:12px;color:#77736c;margin-top:18px}
+@media(max-width:640px){.modal{padding:12px}.modal-card{padding:30px 22px;border-radius:34px 34px 34px 12px}.modal-actions{flex-direction:column}.modal-actions .button{width:100%;justify-content:center}}
+</style>
+<style>.modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s ease}.modal.open{opacity:1;visibility:visible}.modal-backdrop{position:absolute;inset:0;background:rgba(8,8,8,.72);backdrop-filter:blur(12px)}.modal-card{position:relative;width:min(720px,100%);max-height:90vh;overflow:auto;background:#dedbd4;color:#11110f;border:1px solid rgba(17,17,15,.12);border-radius:42px 42px 42px 14px;padding:42px;box-shadow:0 35px 100px rgba(0,0,0,.35);transform:translateY(20px) scale(.98);transition:transform .45s cubic-bezier(.16,1,.3,1)}.modal.open .modal-card{transform:translateY(0) scale(1)}.modal-close{position:absolute;top:18px;right:20px;width:42px;height:42px;border:0;border-radius:50%;background:#11110f;color:#e9e6df;font-size:28px;line-height:1;cursor:pointer}.modal-card h3{font-size:clamp(38px,6vw,64px);line-height:.95;letter-spacing:-.055em;margin:14px 0 18px}.modal-card h3 span{color:#542531}.modal-intro{max-width:580px;color:#625f59;line-height:1.65;margin-bottom:28px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.modal-card label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:#4d4a45;margin-bottom:16px}.modal-card input,.modal-card textarea{display:block;width:100%;margin-top:8px;border:1px solid rgba(17,17,15,.16);background:#e9e6df;color:#11110f;border-radius:18px;padding:15px 16px;font:inherit;font-size:15px;outline:none;box-sizing:border-box}.modal-card textarea{resize:vertical;min-height:150px}.modal-card input:focus,.modal-card textarea:focus{border-color:#542531;box-shadow:0 0 0 4px rgba(84,37,49,.08)}.form-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}.button.secondary{background:#542531;color:#e9e6df}.contact-direct{font-size:13px;color:#68645e;margin-top:20px}.contact-direct a{color:#542531;text-decoration:none;border-bottom:1px solid rgba(84,37,49,.25)}body.modal-open{overflow:hidden}@media(max-width:650px){.modal-card{padding:30px 22px;border-radius:30px 30px 30px 12px}.form-grid{grid-template-columns:1fr}.form-actions .button{width:100%;justify-content:center}.modal-card h3{font-size:44px}}</style></head>
+<body>
+<nav class="nav"><a class="brand" href="#top">CM.</a><div class="navlinks"><a href="#trading">Trading</a><a href="#investments">Investments</a><a href="#approach">Approach</a><a href="#contact" class="nav-cta">Contact</a></div></nav>
+<main id="top">
+<header class="hero">
+<div class="container" style="display:contents"><div>
+<h1>Chaitanya<br><span>Mehta.</span></h1>
+</div><div><p class="hero-copy">Trader, founder and investor building capital through disciplined trading, operating businesses and long-term assets.</p></div>
+<div class="hero-bottom"><div class="scroll quote">“The objective is not to predict every move. It is to build the discipline to act when the opportunity is clear.”</div><div class="hero-meta"><div class="meta"><strong>Trader</strong><span>Manual + Algo</span></div><div class="meta"><strong>Founder</strong><span>1% Circle Capital</span></div><div class="meta"><strong>Investor</strong><span>Private opportunities</span></div></div></div></div>
+</header>
+<section id="trading" class="dark"><div class="container"><div class="section-grid reveal"><div><div class="kicker">01 / Trading</div><h2 class="display">Markets are the <em>first engine</em> of capital.</h2></div><div><p class="lead">I trade my own live capital across gold, silver and crude oil. My approach combines discretionary market structure with systematic execution where an algorithm can improve consistency.</p></div></div>
+<div class="soft-grid reveal"><article class="card"><span class="number">01</span><h3>XAUUSD</h3><p>Primary market across both discretionary and algorithmic trading, with a focus on liquidity, structure and asymmetric risk.</p></article><article class="card"><span class="number">02</span><h3>XAGUSD</h3><p>Silver traded manually around higher-timeframe context, liquidity events and defined execution zones.</p></article><article class="card"><span class="number">03</span><h3>Crude Oil</h3><p>US Crude and Brent traded manually, using macro context alongside technical market structure.</p></article></div></div></section>
+<section id="approach" class="split"><div class="left reveal"><div class="kicker">02 / Philosophy</div><h2>Protect the downside. Let the edge compound.</h2><p>I prefer a process that can survive bad trades, changing conditions and periods of uncertainty. The objective is not to predict every move. It is to create repeatable decisions, control exposure and preserve the ability to participate tomorrow.</p><div class="tagrow"><span class="pill">Liquidity</span><span class="pill">Market Structure</span><span class="pill">Risk First</span><span class="pill">Asymmetric R:R</span></div></div><div class="right reveal"><div class="kicker">03 / Execution</div><h2>Discretion when it matters. Automation when it helps.</h2><p>My discretionary trading covers XAUUSD, XAGUSD, US Crude and Brent. My algorithmic activity is currently focused on XAUUSD in my own live account.</p><div class="tagrow"><span class="pill">Own Capital</span><span class="pill">XAUUSD Algo</span><span class="pill">Manual Trading</span></div></div></section>
+<section id="investments" class="invest"><div class="container"><div class="section-grid reveal"><div><div class="kicker">04 / Investment portfolio</div><h2 class="display">Beyond the screen, I look for <em>real businesses.</em></h2></div><div><p class="lead">Trading generates active capital. Investments are where I want that capital to acquire exposure to businesses and assets with a longer time horizon.</p></div></div>
+<div class="invest-layout"><article class="feature reveal"><div class="kicker">Featured investment</div><h3>Sevnocean<br>Global.</h3><p>An investment in an import business with a focus on steel entering the Rajkot market. The business is being built around existing buyers, supplier relationships and an organised import process.</p><div class="tagrow"><span class="pill">Import Business</span><span class="pill">Steel</span><span class="pill">Rajkot</span><span class="pill">Working Capital</span></div></article><div class="facts reveal"><div class="fact"><small>Investment role</small><strong>Investor</strong><p>Capital participant rather than day-to-day operator.</p></div><div class="fact"><small>Current focus</small><strong>Working capital</strong><p>Supporting supplier transactions through structured trade finance.</p></div><div class="fact"><small>Next</small><strong>More opportunities</strong><p>Actively evaluating businesses where capital can create measurable value.</p></div></div></div></div></section>
+<section class="strategy"><div class="container"><div class="section-grid reveal"><div><div class="kicker">05 / Capital strategy</div><h2 class="display">Trade. Build. <em>Own.</em></h2></div><div><p class="lead">The long-term objective is to convert active income into diversified, recurring income without losing the flexibility to pursue high-conviction opportunities.</p></div></div><div class="flow reveal"><div class="flow-item"><div class="flow-dot">01</div><h4>Trading</h4><p>Generate active capital through manual and algorithmic markets.</p></div><div class="flow-item"><div class="flow-dot">02</div><h4>Business</h4><p>Deploy capital into operating businesses and new opportunities.</p></div><div class="flow-item"><div class="flow-dot">03</div><h4>Property</h4><p>Build long-term exposure across the UK, UAE and India.</p></div><div class="flow-item"><div class="flow-dot">04</div><h4>Income</h4><p>Move progressively toward stable, diversified recurring income.</p></div></div></div></section>
+<section class="future"><div class="container"><div class="section-grid reveal"><div><div class="kicker">06 / Direction</div><h2 class="display">Building the next chapter <em>deliberately.</em></h2></div><div><p class="lead">My next phase combines relocation, business building, property acquisition and continued capital deployment.</p></div></div><div class="future-list reveal"><div class="future-row"><span>01</span><h3>London</h3><p>Relocating to the UK and establishing a long-term base, with a first-time-buyer property strategy centred around the Watford area.</p></div><div class="future-row"><span>02</span><h3>Dubai</h3><p>Building toward an approximately AED 600k investment property, subject to liquidity, financing and the right opportunity.</p></div><div class="future-row"><span>03</span><h3>Rental portfolio</h3><p>Long-term objective: develop property income across the UK, UAE and India toward £4,000 gross monthly rent.</p></div><div class="future-row"><span>04</span><h3>New investments</h3><p>Continuing to evaluate businesses and investment opportunities where the risk, structure and potential return make sense.</p></div></div></div></section>
+<section class="credentials"><div class="container"><div class="section-grid reveal"><div><div class="kicker">07 / Credentials</div><h2 class="display">Learning is part of the <em>capital stack.</em></h2></div><div><p class="lead">A practical mix of finance, investment, procurement and business-oriented education.</p></div></div><div class="creds reveal"><div class="cred"><b>Xero</b><p>Zero Advisor Certified</p></div><div class="cred"><b>Coursera</b><p>Investment Management</p></div><div class="cred"><b>Procurement</b><p>Procurement Management</p></div><div class="cred"><b>ACCA</b><p>4 of 13 examinations completed</p></div></div></div></section>
+<section id="contact" class="contact"><div class="container"><div class="contact-wrap reveal"><div><div class="kicker" style="color:#e0adb7">08 / Contact</div><h2>Have an idea worth <span>building?</span></h2><p class="contact-copy">If you have a business, investment or partnership opportunity, send a short overview. Include your business email so I can follow up directly.</p></div><button class="button" type="button" id="pitchBtn">Pitch an investment idea</button></div></div></section>
+<div class="modal" id="pitchModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pitchTitle">
+  <div class="modal-backdrop" data-close="true"></div>
+  <div class="modal-card">
+    <button class="modal-close" type="button" id="closePitch" aria-label="Close">×</button>
+    <div class="kicker">Investment enquiry</div>
+    <h3 id="pitchTitle">Tell me about the opportunity.</h3>
+    <p class="modal-intro">Keep it concise. Share what the business does, what you are looking for, and the best email to reach you.</p>
+    <form id="pitchForm">
+      <label>Business / founder name<input id="businessName" name="businessName" type="text" placeholder="Your business or name" required></label>
+      <label>Business email<input id="businessEmail" name="businessEmail" type="email" placeholder="you@company.com" required></label>
+      <label>Short description<textarea id="businessDescription" name="businessDescription" rows="5" placeholder="What does the business do, what stage is it at, and what are you looking for?" required></textarea></label>
+      <div class="modal-actions">
+        <button class="button button-dark" type="submit">Send by email</button>
+        <button class="button button-whatsapp" type="button" id="whatsappBtn">Continue on WhatsApp</button>
+      </div>
+      <p class="modal-note">Email: chaitanyamehta35@gmail.com · WhatsApp: +44 7823606798</p>
+    </form>
+  </div>
+</div>
+</main><footer><div class="container footer-in"><span>© 2026 Chaitanya Mehta</span><span>Trader · Founder · Investor</span></div></footer>
+<script>
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+
+<script>
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+const modal=document.getElementById('pitchModal');
+const openBtn=document.getElementById('pitchBtn');
+const closeBtn=document.getElementById('closePitch');
+const form=document.getElementById('pitchForm');
+const whatsappBtn=document.getElementById('whatsappBtn');
+
+function openPitch(){modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');setTimeout(()=>document.getElementById('businessName').focus(),100)}
+function closePitch(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')}
+openBtn.addEventListener('click',openPitch);
+closeBtn.addEventListener('click',closePitch);
+modal.querySelector('[data-close="true"]').addEventListener('click',closePitch);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closePitch()});
+
+function getData(){
+ return {
+  name:document.getElementById('businessName').value.trim(),
+  email:document.getElementById('pitchEmail').value.trim(),
+  description:document.getElementById('businessDescription').value.trim()
+ };
+}
+
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ if(!form.reportValidity()) return;
+ const x=getData();
+ const subject=encodeURIComponent('Investment Opportunity — '+x.name);
+ const body=encodeURIComponent('Business / Founder: '+x.name+'\nEmail: '+x.email+'\n\nBusiness Description:\n'+x.description);
+ window.location.href='mailto:chaitanyamehta35@gmail.com?subject='+subject+'&body='+body;
+});
+
+whatsappBtn.addEventListener('click',()=>{
+ if(!form.reportValidity()) return;
+ const x=getData();
+ const msg=encodeURIComponent('Investment Opportunity\n\nBusiness / Founder: '+x.name+'\nEmail: '+x.email+'\n\nBusiness Description:\n'+x.description);
+ window.open('https://wa.me/447823606798?text='+msg,'_blank','noopener');
+});
+</script></body></html>
